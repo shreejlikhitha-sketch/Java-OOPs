@@ -18,6 +18,19 @@ Delegation hirearchy model
 Visiblity
 uniqueness
 
+Visibility principle:
+
+It Says that a class loaded by a parent class loader will be visible to child class loader, but class loaded by the child class loader will not be visible to parent classloader.
+Suppose a class has been loaded by extension class loader then this class will be only visible to extension and application class loader and will not be visble to bootstrap class loader 
+
+Uniqueness principle:
+If the the classes are unique and there is no repetition of classes.
+This also ensures that the classes which are loaded by parent will not be loaded by the child class loader.
+If the parent class loader is not able to load the class then only it will delegate (Work on behalf of) its work to the child class.
+
+ClassNotFoundException is a checked exception when all the three loaders are not able to find the classes we will get this exception.
+ClasscastException : when the 2 classloaders loads the classes with the same name.
+
 
 
 
