@@ -1,0 +1,23 @@
+classloaders are used to load the .class files into memory.
+Whenever we write the java program we will save it into .java file , after we compile it will convert into .class files.
+Loading of .class file into memory is been done by Classloaders.
+Classloader is a part of runtime environment and it dynamically loads rge java classes into memory.
+It doesnot load all the classes in memory in one go it loads the classes when it is required by the application.
+
+3 Types of classloaders :
+Bootstrap classloader : It is used to load the .class file which is present in the $JAVA_HOME/jre/lib/rt.jar
+
+Extension classloader : It is used to load the .class fils which are present in the $JAVA_HOME/jre/lib/ext folder.
+
+Applicatoin classloader: It is used to load the .class file which is present in the .class files which are present in the class path.
+
+Whenever JVM come across a particular class first it will check whether the class is loaded or not if its alredy loaded it will use that class if not jvm will asks the class loader to load that particular class.
+
+To load the class class loader follows 3 principles:
+Delegation hirearchy model
+Visiblity
+uniqueness
+
+
+
+
