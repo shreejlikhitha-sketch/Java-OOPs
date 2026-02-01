@@ -10,7 +10,7 @@ Bootstrap classloader : It is used to load the .class file which is present in t
 
 Extension classloader : It is used to load the .class fils which are present in the $JAVA_HOME/jre/lib/ext folder.
 
-Applicatoin classloader: It is used to load the .class file which is present in the .class files which are present in the class path.
+Applicatoin classloader: Application ClassLoader loads all application-level classes and third-party libraries from the classpath. 
 
 Whenever JVM come across a particular class first it will check whether the class is loaded or not if its alredy loaded it will use that class if not jvm will asks the class loader to load that particular class.
 
