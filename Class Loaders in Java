@@ -1,3 +1,4 @@
+
 classloaders are used to load the .class files into memory.
 Whenever we write the java program we will save it into .java file , after we compile it will convert into .class files.
 Loading of .class file into memory is been done by Classloaders.
@@ -30,6 +31,25 @@ If the parent class loader is not able to load the class then only it will deleg
 
 ClassNotFoundException is a checked exception when all the three loaders are not able to find the classes we will get this exception.
 ClasscastException : when the 2 classloaders loads the classes with the same name.
+
+What is a Custom ClassLoader?
+A custom classloader is a class that you write to control how and from where Java loads classes, instead of using only the default ones (Bootstrap / Platform / Application).
+Why do we need Custom ClassLoaders?
+
+Default classloaders load classes from:
+
+JDK modules
+Classpath
+Module path
+
+But sometimes you need more control, like:
+Load plugins at runtime
+Load classes from external folders
+Load classes from encrypted files
+Load classes from network / HTTP
+Isolate dependencies (same library, different versions)
+
+
 
 
 
