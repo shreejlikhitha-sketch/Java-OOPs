@@ -7,6 +7,14 @@ It doesnot load all the classes in memory in one go it loads the classes when it
 
 3 Types of classloaders :
 Bootstrap classloader : It is used to load the .class file which is present in the $JAVA_HOME/jre/lib/rt.jar
+rt.jar was split into modules
+
+Instead of rt.jar, you now have modules like:
+
+java.base
+java.sql
+java.logging
+java.xml
 
 Extension classloader : It is used to load the .class fils which are present in the $JAVA_HOME/jre/lib/ext folder.
 
